@@ -13,7 +13,6 @@
 		F64B29D919E1E40C00F4991F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F64B29D719E1E40C00F4991F /* InfoPlist.strings */; };
 		F64B29DB19E1E40C00F4991F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B29DA19E1E40C00F4991F /* main.m */; };
 		F64B29DF19E1E40C00F4991F /* AMBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B29DE19E1E40C00F4991F /* AMBAppDelegate.m */; };
-		F64B29E219E1E40C00F4991F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64B29E019E1E40C00F4991F /* Main.storyboard */; };
 		F64B29E519E1E40C00F4991F /* AMBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B29E419E1E40C00F4991F /* AMBViewController.m */; };
 		F64B29E719E1E40C00F4991F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64B29E619E1E40C00F4991F /* Images.xcassets */; };
 		F64B29EE19E1E40C00F4991F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64B29ED19E1E40C00F4991F /* XCTest.framework */; };
@@ -22,6 +21,9 @@
 		F64B29F819E1E40C00F4991F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F64B29F619E1E40C00F4991F /* InfoPlist.strings */; };
 		F64B29FA19E1E40C00F4991F /* A_Maze_BallsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B29F919E1E40C00F4991F /* A_Maze_BallsTests.m */; };
 		F64B2A0519E1E76300F4991F /* AMBView.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B2A0419E1E76300F4991F /* AMBView.m */; };
+		F64B2A0C19E1EBC000F4991F /* AMBGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B2A0B19E1EBC000F4991F /* AMBGameViewController.m */; };
+		F64B2A0F19E1ED8300F4991F /* AMBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B2A0E19E1ED8300F4991F /* AMBHomeViewController.m */; };
+		F64B2A1119E1EDC700F4991F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F64B2A1019E1EDC700F4991F /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +47,6 @@
 		F64B29DC19E1E40C00F4991F /* A-Maze-Balls-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "A-Maze-Balls-Prefix.pch"; sourceTree = "<group>"; };
 		F64B29DD19E1E40C00F4991F /* AMBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMBAppDelegate.h; sourceTree = "<group>"; };
 		F64B29DE19E1E40C00F4991F /* AMBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMBAppDelegate.m; sourceTree = "<group>"; };
-		F64B29E119E1E40C00F4991F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F64B29E319E1E40C00F4991F /* AMBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMBViewController.h; sourceTree = "<group>"; };
 		F64B29E419E1E40C00F4991F /* AMBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMBViewController.m; sourceTree = "<group>"; };
 		F64B29E619E1E40C00F4991F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -56,6 +57,11 @@
 		F64B29F919E1E40C00F4991F /* A_Maze_BallsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A_Maze_BallsTests.m; sourceTree = "<group>"; };
 		F64B2A0319E1E76300F4991F /* AMBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBView.h; sourceTree = "<group>"; };
 		F64B2A0419E1E76300F4991F /* AMBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBView.m; sourceTree = "<group>"; };
+		F64B2A0A19E1EBC000F4991F /* AMBGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBGameViewController.h; sourceTree = "<group>"; };
+		F64B2A0B19E1EBC000F4991F /* AMBGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBGameViewController.m; sourceTree = "<group>"; };
+		F64B2A0D19E1ED8300F4991F /* AMBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBHomeViewController.h; sourceTree = "<group>"; };
+		F64B2A0E19E1ED8300F4991F /* AMBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBHomeViewController.m; sourceTree = "<group>"; };
+		F64B2A1019E1EDC700F4991F /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +123,14 @@
 			children = (
 				F64B29DD19E1E40C00F4991F /* AMBAppDelegate.h */,
 				F64B29DE19E1E40C00F4991F /* AMBAppDelegate.m */,
-				F64B29E019E1E40C00F4991F /* Main.storyboard */,
 				F64B29E319E1E40C00F4991F /* AMBViewController.h */,
 				F64B29E419E1E40C00F4991F /* AMBViewController.m */,
+				F64B2A1019E1EDC700F4991F /* HomeViewController.xib */,
+				F64B2A0D19E1ED8300F4991F /* AMBHomeViewController.h */,
+				F64B2A0E19E1ED8300F4991F /* AMBHomeViewController.m */,
 				F64B2A0319E1E76300F4991F /* AMBView.h */,
 				F64B2A0419E1E76300F4991F /* AMBView.m */,
+				F64B2A0919E1EBC000F4991F /* Game Files */,
 				F64B29E619E1E40C00F4991F /* Images.xcassets */,
 				F64B29D519E1E40C00F4991F /* Supporting Files */,
 			);
@@ -155,6 +164,15 @@
 				F64B29F619E1E40C00F4991F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F64B2A0919E1EBC000F4991F /* Game Files */ = {
+			isa = PBXGroup;
+			children = (
+				F64B2A0A19E1EBC000F4991F /* AMBGameViewController.h */,
+				F64B2A0B19E1EBC000F4991F /* AMBGameViewController.m */,
+			);
+			path = "Game Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +254,7 @@
 			files = (
 				F64B29E719E1E40C00F4991F /* Images.xcassets in Resources */,
 				F64B29D919E1E40C00F4991F /* InfoPlist.strings in Resources */,
-				F64B29E219E1E40C00F4991F /* Main.storyboard in Resources */,
+				F64B2A1119E1EDC700F4991F /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,9 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64B2A0C19E1EBC000F4991F /* AMBGameViewController.m in Sources */,
 				F64B29DF19E1E40C00F4991F /* AMBAppDelegate.m in Sources */,
 				F64B29DB19E1E40C00F4991F /* main.m in Sources */,
 				F64B29E519E1E40C00F4991F /* AMBViewController.m in Sources */,
+				F64B2A0F19E1ED8300F4991F /* AMBHomeViewController.m in Sources */,
 				F64B2A0519E1E76300F4991F /* AMBView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,14 +307,6 @@
 				F64B29D819E1E40C00F4991F /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F64B29E019E1E40C00F4991F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F64B29E119E1E40C00F4991F /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		F64B29F619E1E40C00F4991F /* InfoPlist.strings */ = {
