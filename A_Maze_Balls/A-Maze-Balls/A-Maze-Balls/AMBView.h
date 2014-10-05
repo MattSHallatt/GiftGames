@@ -1,5 +1,5 @@
 //
-//  GGAViewController.h
+//  AMBView.h
 //  A-Maze-Balls
 //
 //  Created by Matthew Hallatt on 05/10/2014.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GGAViewController : UIViewController
+@interface AMBView : UIView
 
 @end

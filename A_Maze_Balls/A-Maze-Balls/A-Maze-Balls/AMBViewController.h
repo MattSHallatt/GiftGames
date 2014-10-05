@@ -1,5 +1,5 @@
 //
-//  GGAAppDelegate.h
+//  AMBViewController.h
 //  A-Maze-Balls
 //
 //  Created by Matthew Hallatt on 05/10/2014.
@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GGAAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AMBViewController : UIViewController
 
-@property (strong, nonatomic) UIWindow *window;
+- (void)setup;
+- (void)update;
+- (void)notifications;
+- (void)dismiss;
 
 @end

@@ -12,15 +12,16 @@
 		F64B29D319E1E40C00F4991F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64B29D219E1E40C00F4991F /* UIKit.framework */; };
 		F64B29D919E1E40C00F4991F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F64B29D719E1E40C00F4991F /* InfoPlist.strings */; };
 		F64B29DB19E1E40C00F4991F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B29DA19E1E40C00F4991F /* main.m */; };
-		F64B29DF19E1E40C00F4991F /* GGAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B29DE19E1E40C00F4991F /* GGAAppDelegate.m */; };
+		F64B29DF19E1E40C00F4991F /* AMBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B29DE19E1E40C00F4991F /* AMBAppDelegate.m */; };
 		F64B29E219E1E40C00F4991F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64B29E019E1E40C00F4991F /* Main.storyboard */; };
-		F64B29E519E1E40C00F4991F /* GGAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B29E419E1E40C00F4991F /* GGAViewController.m */; };
+		F64B29E519E1E40C00F4991F /* AMBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B29E419E1E40C00F4991F /* AMBViewController.m */; };
 		F64B29E719E1E40C00F4991F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64B29E619E1E40C00F4991F /* Images.xcassets */; };
 		F64B29EE19E1E40C00F4991F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64B29ED19E1E40C00F4991F /* XCTest.framework */; };
 		F64B29EF19E1E40C00F4991F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64B29CE19E1E40C00F4991F /* Foundation.framework */; };
 		F64B29F019E1E40C00F4991F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64B29D219E1E40C00F4991F /* UIKit.framework */; };
 		F64B29F819E1E40C00F4991F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F64B29F619E1E40C00F4991F /* InfoPlist.strings */; };
 		F64B29FA19E1E40C00F4991F /* A_Maze_BallsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B29F919E1E40C00F4991F /* A_Maze_BallsTests.m */; };
+		F64B2A0519E1E76300F4991F /* AMBView.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B2A0419E1E76300F4991F /* AMBView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,17 +43,19 @@
 		F64B29D819E1E40C00F4991F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F64B29DA19E1E40C00F4991F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F64B29DC19E1E40C00F4991F /* A-Maze-Balls-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "A-Maze-Balls-Prefix.pch"; sourceTree = "<group>"; };
-		F64B29DD19E1E40C00F4991F /* GGAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGAAppDelegate.h; sourceTree = "<group>"; };
-		F64B29DE19E1E40C00F4991F /* GGAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGAAppDelegate.m; sourceTree = "<group>"; };
+		F64B29DD19E1E40C00F4991F /* AMBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMBAppDelegate.h; sourceTree = "<group>"; };
+		F64B29DE19E1E40C00F4991F /* AMBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMBAppDelegate.m; sourceTree = "<group>"; };
 		F64B29E119E1E40C00F4991F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F64B29E319E1E40C00F4991F /* GGAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGAViewController.h; sourceTree = "<group>"; };
-		F64B29E419E1E40C00F4991F /* GGAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGAViewController.m; sourceTree = "<group>"; };
+		F64B29E319E1E40C00F4991F /* AMBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMBViewController.h; sourceTree = "<group>"; };
+		F64B29E419E1E40C00F4991F /* AMBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMBViewController.m; sourceTree = "<group>"; };
 		F64B29E619E1E40C00F4991F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F64B29EC19E1E40C00F4991F /* A-Maze-BallsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "A-Maze-BallsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64B29ED19E1E40C00F4991F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F64B29F519E1E40C00F4991F /* A-Maze-BallsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "A-Maze-BallsTests-Info.plist"; sourceTree = "<group>"; };
 		F64B29F719E1E40C00F4991F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F64B29F919E1E40C00F4991F /* A_Maze_BallsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A_Maze_BallsTests.m; sourceTree = "<group>"; };
+		F64B2A0319E1E76300F4991F /* AMBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBView.h; sourceTree = "<group>"; };
+		F64B2A0419E1E76300F4991F /* AMBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +115,13 @@
 		F64B29D419E1E40C00F4991F /* A-Maze-Balls */ = {
 			isa = PBXGroup;
 			children = (
-				F64B29DD19E1E40C00F4991F /* GGAAppDelegate.h */,
-				F64B29DE19E1E40C00F4991F /* GGAAppDelegate.m */,
+				F64B29DD19E1E40C00F4991F /* AMBAppDelegate.h */,
+				F64B29DE19E1E40C00F4991F /* AMBAppDelegate.m */,
 				F64B29E019E1E40C00F4991F /* Main.storyboard */,
-				F64B29E319E1E40C00F4991F /* GGAViewController.h */,
-				F64B29E419E1E40C00F4991F /* GGAViewController.m */,
+				F64B29E319E1E40C00F4991F /* AMBViewController.h */,
+				F64B29E419E1E40C00F4991F /* AMBViewController.m */,
+				F64B2A0319E1E76300F4991F /* AMBView.h */,
+				F64B2A0419E1E76300F4991F /* AMBView.m */,
 				F64B29E619E1E40C00F4991F /* Images.xcassets */,
 				F64B29D519E1E40C00F4991F /* Supporting Files */,
 			);
@@ -196,7 +201,7 @@
 		F64B29C319E1E40C00F4991F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = GGA;
+				CLASSPREFIX = AMB;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Gift Games";
 				TargetAttributes = {
@@ -250,9 +255,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F64B29DF19E1E40C00F4991F /* GGAAppDelegate.m in Sources */,
+				F64B29DF19E1E40C00F4991F /* AMBAppDelegate.m in Sources */,
 				F64B29DB19E1E40C00F4991F /* main.m in Sources */,
-				F64B29E519E1E40C00F4991F /* GGAViewController.m in Sources */,
+				F64B29E519E1E40C00F4991F /* AMBViewController.m in Sources */,
+				F64B2A0519E1E76300F4991F /* AMBView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

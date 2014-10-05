@@ -1,14 +1,14 @@
 //
-//  GGAAppDelegate.m
+//  AMBAppDelegate.m
 //  A-Maze-Balls
 //
 //  Created by Matthew Hallatt on 05/10/2014.
 //  Copyright (c) 2014 Gift Games. All rights reserved.
 //
 
-#import "GGAAppDelegate.h"
+#import "AMBAppDelegate.h"
 
-@implementation GGAAppDelegate
+@implementation AMBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
