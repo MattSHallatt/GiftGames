@@ -7,8 +7,11 @@
 //
 
 #import "AMBGameViewController.h"
+#import "AMBSineGenerator.h"
 
 @interface AMBGameViewController ()
+
+@property (nonatomic, strong) AMBSineGenerator *sineGenerator;
 
 @end
 
@@ -17,6 +20,17 @@
 - (void)setup
 {
   [super setup];
+  [self setupSineGenerator];
+}
+
+- (void)setupSineGenerator
+{
+  self.sineGenerator = [[AMBSineGenerator alloc] init];
+  [self.sineGenerator setUpperBound:360];
+  [self.sineGenerator setActive:true];
+  [self.sineGenerator setListener:^(float sineValue) {
+    NSLog(@"%f", sineValue);
+  }];
 }
 
 @end

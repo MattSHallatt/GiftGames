@@ -40,7 +40,7 @@
 
 - (void)setup
 {
-  
+  [self.view setBackgroundColor:[UIColor whiteColor]];
 }
 
 #pragma mark - Update Methods
