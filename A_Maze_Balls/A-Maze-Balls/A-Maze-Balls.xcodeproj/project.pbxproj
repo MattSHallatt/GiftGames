@@ -23,7 +23,7 @@
 		F64B2A0519E1E76300F4991F /* AMBView.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B2A0419E1E76300F4991F /* AMBView.m */; };
 		F64B2A0C19E1EBC000F4991F /* AMBGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B2A0B19E1EBC000F4991F /* AMBGameViewController.m */; };
 		F64B2A0F19E1ED8300F4991F /* AMBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B2A0E19E1ED8300F4991F /* AMBHomeViewController.m */; };
-		F64B2A1119E1EDC700F4991F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F64B2A1019E1EDC700F4991F /* HomeViewController.xib */; };
+		F6D652481A6C347A0057C552 /* RootStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D652471A6C347A0057C552 /* RootStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,7 @@
 		F64B2A0B19E1EBC000F4991F /* AMBGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBGameViewController.m; sourceTree = "<group>"; };
 		F64B2A0D19E1ED8300F4991F /* AMBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBHomeViewController.h; sourceTree = "<group>"; };
 		F64B2A0E19E1ED8300F4991F /* AMBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBHomeViewController.m; sourceTree = "<group>"; };
-		F64B2A1019E1EDC700F4991F /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		F6D652471A6C347A0057C552 /* RootStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RootStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +125,7 @@
 				F64B29DE19E1E40C00F4991F /* AMBAppDelegate.m */,
 				F64B29E319E1E40C00F4991F /* AMBViewController.h */,
 				F64B29E419E1E40C00F4991F /* AMBViewController.m */,
-				F64B2A1019E1EDC700F4991F /* HomeViewController.xib */,
+				F6D652471A6C347A0057C552 /* RootStoryboard.storyboard */,
 				F64B2A0D19E1ED8300F4991F /* AMBHomeViewController.h */,
 				F64B2A0E19E1ED8300F4991F /* AMBHomeViewController.m */,
 				F64B2A0319E1E76300F4991F /* AMBView.h */,
@@ -253,8 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F64B29E719E1E40C00F4991F /* Images.xcassets in Resources */,
+				F6D652481A6C347A0057C552 /* RootStoryboard.storyboard in Resources */,
 				F64B29D919E1E40C00F4991F /* InfoPlist.strings in Resources */,
-				F64B2A1119E1EDC700F4991F /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

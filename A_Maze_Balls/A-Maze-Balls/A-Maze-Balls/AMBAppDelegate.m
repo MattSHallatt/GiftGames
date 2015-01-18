@@ -7,6 +7,7 @@
 //
 
 #import "AMBAppDelegate.h"
+#import "AMBHomeViewController.h"
 
 @implementation AMBAppDelegate
 

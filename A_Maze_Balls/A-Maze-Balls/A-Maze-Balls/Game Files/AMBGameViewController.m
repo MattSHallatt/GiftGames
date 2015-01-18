@@ -17,7 +17,6 @@
 - (void)setup
 {
   [super setup];
-  [self.view setBackgroundColor:[UIColor purpleColor]];
 }
 
 @end
