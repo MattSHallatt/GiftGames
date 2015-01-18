@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CBFD72B9-62D0-4B3F-92D3-4189D984BB38</string>
+	<key>IDESourceControlProjectName</key>
+	<string>A-Maze-Balls</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2361273D3E1926D66135705514FB47E48618FD88</key>
+		<string>https://github.com/Matty180/GiftGames.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>A_Maze_Balls/A-Maze-Balls/A-Maze-Balls.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2361273D3E1926D66135705514FB47E48618FD88</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Matty180/GiftGames.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2361273D3E1926D66135705514FB47E48618FD88</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2361273D3E1926D66135705514FB47E48618FD88</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GiftGames</string>
+		</dict>
+	</array>
+</dict>
+</plist>

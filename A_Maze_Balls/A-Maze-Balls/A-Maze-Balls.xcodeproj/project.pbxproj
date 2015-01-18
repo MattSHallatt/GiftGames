@@ -475,6 +475,7 @@
 				F64B29FF19E1E40C00F4991F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F64B2A0019E1E40C00F4991F /* Build configuration list for PBXNativeTarget "A-Maze-BallsTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +484,7 @@
 				F64B2A0219E1E40C00F4991F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
