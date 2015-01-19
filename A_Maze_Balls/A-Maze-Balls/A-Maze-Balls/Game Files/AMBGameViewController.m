@@ -7,11 +7,11 @@
 //
 
 #import "AMBGameViewController.h"
-#import "AMBSineGenerator.h"
+#import "AMBWallGeneratingView.h"
 
 @interface AMBGameViewController ()
 
-@property (nonatomic, strong) AMBSineGenerator *sineGenerator;
+@property (nonatomic, strong) AMBWallGeneratingView *wallGeneratingView;
 
 @end
 
@@ -20,16 +20,18 @@
 - (void)setup
 {
   [super setup];
-  [self setupSineGenerator];
+  [self setupWallGeneratingView];
 }
 
-- (void)setupSineGenerator
+- (void)setupWallGeneratingView
 {
-  self.sineGenerator = [[AMBSineGenerator alloc] init];
-  [self.sineGenerator setActive:true];
-  [self.sineGenerator setListener:^(float sineValue) {
-    NSLog(@"%f", sineValue);
-  }];
+  self.wallGeneratingView = [[AMBWallGeneratingView alloc] initWithFrame:self.view.bounds];
+  [self.view addSubview:self.wallGeneratingView];
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+  return true;
 }
 
 @end
