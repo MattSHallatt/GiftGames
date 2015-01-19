@@ -14,8 +14,6 @@ typedef void(^callbackBlock)(float sine);
 
 @property (nonatomic, strong) callbackBlock listener;
 
-@property (nonatomic, assign) int upperBound;
-
 - (void)setActive:(BOOL)active;
 
 @end

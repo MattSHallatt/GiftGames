@@ -9,6 +9,7 @@
 #import "AMBSineGenerator.h"
 
 #define DEG_2_RAD(x) (x*M_PI)/180.0f
+#define UPPER_LIMIT 360
 
 @interface AMBSineGenerator ()
 
@@ -35,7 +36,7 @@
 
 - (void)updateSine
 {
-  if(self.index == self.upperBound)
+  if(self.index > UPPER_LIMIT)
   {
     self.index = 0;
   }
