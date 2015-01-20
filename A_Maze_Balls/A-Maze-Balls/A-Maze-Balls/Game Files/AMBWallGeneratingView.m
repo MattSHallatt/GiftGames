@@ -13,6 +13,7 @@
 @interface AMBWallGeneratingView ()
 
 @property (nonatomic, strong) AMBSineGenerator *sineGenerator;
+@property (nonatomic, strong) NSMutableArray *wallSegments;
 @property (nonatomic, strong) AMBWallSegment *wallSegment;
 
 @end
@@ -22,7 +23,22 @@
 - (void)setup
 {
   [super setup];
+  [self setupWallSegments];
   [self setupSineGenerator];
+}
+
+- (void)setupWallSegments
+{
+  self.wallSegments = [[NSMutableArray alloc] init];
+  
+  for (int i = 0; i < self.frame.size.height; i++)
+  {
+    AMBWallSegment *segment = [[AMBWallSegment alloc] initWithFrame:CGRectMake(0.0f, -i, self.frame.size.width, 1.0f)
+                                                                gap:150.0f
+                                                             offset:0];
+    [self.wallSegments addObject:segment];
+    [self addSubview:segment];
+  }
 }
 
 - (void)setupSineGenerator
@@ -32,11 +48,22 @@
   
   __weak AMBWallGeneratingView *weakSelf = self;
   [self.sineGenerator setListener:^(float sineValue) {
-    [weakSelf.wallSegment removeFromSuperview];
-    weakSelf.wallSegment = [[AMBWallSegment alloc] initWithFrame:CGRectMake(0.0f, 0.0f, weakSelf.frame.size.width, 20.0f)
-                                                             gap:250.0f
-                                                          offset:(sineValue * weakSelf.frame.size.width/10)];
-    [weakSelf addSubview:weakSelf.wallSegment];
+    [weakSelf.wallSegments enumerateObjectsUsingBlock:^(AMBWallSegment *wallSegment, NSUInteger idx, BOOL *stop) {
+      CGRect newWallSegmentFrame = wallSegment.frame;
+      newWallSegmentFrame.origin.y++;
+      
+      if(newWallSegmentFrame.origin.y == weakSelf.frame.size.height)
+      {
+        newWallSegmentFrame.origin.y = 0;
+        
+        [weakSelf.wallSegments removeObject:wallSegment];
+        [weakSelf.wallSegments insertObject:wallSegment atIndex:0];
+      }
+      
+      [wallSegment setFrame:newWallSegmentFrame];
+    }];
+    
+    [weakSelf.wallSegments[0] setOffset:(sineValue * weakSelf.frame.size.width/10)];
   }];
 }
 

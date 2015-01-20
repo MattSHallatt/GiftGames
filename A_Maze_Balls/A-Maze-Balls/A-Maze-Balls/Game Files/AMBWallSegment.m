@@ -10,9 +10,6 @@
 
 @interface AMBWallSegment ()
 
-@property (nonatomic, assign) float gap;
-@property (nonatomic, assign) float offset;
-
 @property (nonatomic, strong) UIView *leftWall;
 @property (nonatomic, strong) UIView *rightWall;
 
@@ -20,12 +17,16 @@
 
 @implementation AMBWallSegment
 
+#pragma mark - Initialisation Methods
+
 - (id)initWithFrame:(CGRect)frame gap:(float)gap offset:(float)offset
 {
   _gap = gap;
   _offset = offset;
   return [super initWithFrame:frame];
 }
+
+#pragma mark - Setup Methods
 
 - (void)setup
 {
@@ -36,24 +37,56 @@
 
 - (void)setupLeftWall
 {
-  float width = (self.frame.size.width - self.gap)/2;
-  self.leftWall = [[UIView alloc] initWithFrame:CGRectMake(0.0f,
-                                                           0.0f,
-                                                           width + self.offset,
-                                                           self.frame.size.height)];
+  self.leftWall = [[UIView alloc] init];
   [self.leftWall setBackgroundColor:[UIColor redColor]];
   [self addSubview:self.leftWall];
 }
 
 - (void)setupRightWall
 {
-  float width = (self.frame.size.width - self.gap)/2;
-  self.rightWall = [[UIView alloc] initWithFrame:CGRectMake(self.frame.size.width - width + self.offset,
-                                                            0.0f,
-                                                            width - self.offset,
-                                                            self.frame.size.height)];
+  self.rightWall = [[UIView alloc] init];
   [self.rightWall setBackgroundColor:[UIColor redColor]];
   [self addSubview:self.rightWall];
+}
+
+#pragma mark - Setter Methods
+
+- (void)setGap:(float)gap
+{
+  _gap = gap;
+  [self updateWalls];
+}
+
+- (void)setOffset:(float)offset
+{
+  _offset = offset;
+  [self updateWalls];
+}
+
+#pragma mark - Update Methods
+
+- (void)updateWalls
+{
+  [self updateLeftWall];
+  [self updateRightWall];
+}
+
+- (void)updateLeftWall
+{
+  float width = (self.frame.size.width - self.gap)/2;
+  [self.leftWall setFrame:CGRectMake(0.0f,
+                                     0.0f,
+                                     width + self.offset,
+                                     self.frame.size.height)];
+}
+
+- (void)updateRightWall
+{
+  float width = (self.frame.size.width - self.gap)/2;
+  [self.rightWall setFrame:CGRectMake(self.frame.size.width - width + self.offset,
+                                      0.0f,
+                                      width - self.offset,
+                                      self.frame.size.height)];
 }
 
 @end

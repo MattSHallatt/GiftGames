@@ -10,6 +10,9 @@
 
 @interface AMBWallSegment : AMBView
 
+@property (nonatomic, assign) float gap;
+@property (nonatomic, assign) float offset;
+
 - (id)initWithFrame:(CGRect)frame gap:(float)gap offset:(float)offset;
 
 @end
