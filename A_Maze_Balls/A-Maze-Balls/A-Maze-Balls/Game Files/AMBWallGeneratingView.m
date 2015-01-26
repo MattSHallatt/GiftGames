@@ -74,7 +74,18 @@
       
       [wallSegment setFrame:newWallSegmentFrame];
     }];
+    [weakSelf checkCollisionWithBall:weakSelf.ball];
   }];
+}
+
+- (void)checkCollisionWithBall:(AMBBall *)ball
+{
+  __block BOOL isColliding = false;
+  [self.wallSegments enumerateObjectsUsingBlock:^(AMBWallSegment *segment, NSUInteger idx, BOOL *stop) {
+    isColliding = isColliding? : [segment isCollidingWithFrame:self.ball.frame];
+    *stop = isColliding;
+  }];
+  [self.ball setBackgroundColor:isColliding? [UIColor magentaColor] : [UIColor blackColor]];
 }
 
 @end

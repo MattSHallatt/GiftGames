@@ -42,9 +42,11 @@
 - (void)setupBall
 {
   self.ball = [[AMBBall alloc] initWithCentrePoint:CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height - 100.0f)
-                                            radius:40.0f];
+                                            radius:30.0f];
   [self.ball setBackgroundColor:[UIColor blackColor]];
   [self.view addSubview:self.ball];
+  
+  [self.wallGeneratingView setBall:self.ball];
 }
 
 #pragma mark - Touch Methods

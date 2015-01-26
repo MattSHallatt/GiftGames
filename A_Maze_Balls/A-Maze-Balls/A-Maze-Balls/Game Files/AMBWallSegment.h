@@ -15,4 +15,6 @@
 
 - (id)initWithFrame:(CGRect)frame gap:(float)gap offset:(float)offset;
 
+- (BOOL)isCollidingWithFrame:(CGRect)incomingFrame;
+
 @end

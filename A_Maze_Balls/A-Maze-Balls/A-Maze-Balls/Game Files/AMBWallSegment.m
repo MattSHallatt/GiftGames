@@ -93,4 +93,18 @@
                                       self.frame.size.height)];
 }
 
+#pragma mark - Collision Methods
+
+- (BOOL)isCollidingWithFrame:(CGRect)incomingFrame
+{
+  return (CGRectIntersectsRect(incomingFrame, CGRectMake(self.leftWall.frame.origin.x,
+                                                         self.frame.origin.y,
+                                                         self.leftWall.frame.size.width,
+                                                         self.leftWall.frame.size.height)) ||
+          CGRectIntersectsRect(incomingFrame, CGRectMake(self.rightWall.frame.origin.x,
+                                                         self.frame.origin.y,
+                                                         self.rightWall.frame.size.width,
+                                                         self.rightWall.frame.size.height)));
+}
+
 @end

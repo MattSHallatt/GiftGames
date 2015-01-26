@@ -7,7 +7,10 @@
 //
 
 #import "AMBView.h"
+#import "AMBBall.h"
 
 @interface AMBWallGeneratingView : AMBView
+
+@property (nonatomic, strong) AMBBall *ball;
 
 @end
