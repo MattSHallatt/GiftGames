@@ -27,6 +27,7 @@
 		F64B2A0F19E1ED8300F4991F /* AMBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B2A0E19E1ED8300F4991F /* AMBHomeViewController.m */; };
 		F6D652481A6C347A0057C552 /* RootStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D652471A6C347A0057C552 /* RootStoryboard.storyboard */; };
 		F6D6524B1A6C789F0057C552 /* AMBSineGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D6524A1A6C789F0057C552 /* AMBSineGenerator.m */; };
+		F6D6524E1A7573680057C552 /* AMBBall.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D6524D1A7573680057C552 /* AMBBall.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		F6D652471A6C347A0057C552 /* RootStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RootStoryboard.storyboard; sourceTree = "<group>"; };
 		F6D652491A6C789F0057C552 /* AMBSineGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBSineGenerator.h; sourceTree = "<group>"; };
 		F6D6524A1A6C789F0057C552 /* AMBSineGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBSineGenerator.m; sourceTree = "<group>"; };
+		F6D6524C1A7573680057C552 /* AMBBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBBall.h; sourceTree = "<group>"; };
+		F6D6524D1A7573680057C552 /* AMBBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBBall.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +189,8 @@
 				B98FAB321A6D3C2E00EC26A5 /* AMBWallSegment.m */,
 				F6D652491A6C789F0057C552 /* AMBSineGenerator.h */,
 				F6D6524A1A6C789F0057C552 /* AMBSineGenerator.m */,
+				F6D6524C1A7573680057C552 /* AMBBall.h */,
+				F6D6524D1A7573680057C552 /* AMBBall.m */,
 			);
 			path = "Game Files";
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				F64B2A0C19E1EBC000F4991F /* AMBGameViewController.m in Sources */,
 				F64B29DF19E1E40C00F4991F /* AMBAppDelegate.m in Sources */,
 				F64B29DB19E1E40C00F4991F /* main.m in Sources */,
+				F6D6524E1A7573680057C552 /* AMBBall.m in Sources */,
 				F64B29E519E1E40C00F4991F /* AMBViewController.m in Sources */,
 				F64B2A0F19E1ED8300F4991F /* AMBHomeViewController.m in Sources */,
 				B98FAB331A6D3C2E00EC26A5 /* AMBWallSegment.m in Sources */,

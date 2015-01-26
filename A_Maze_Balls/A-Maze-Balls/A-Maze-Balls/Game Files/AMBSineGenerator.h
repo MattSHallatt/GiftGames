@@ -13,7 +13,6 @@ typedef void(^callbackBlock)(float sine);
 @interface AMBSineGenerator : NSObject
 
 @property (nonatomic, strong) callbackBlock listener;
-
-- (void)setActive:(BOOL)active;
+@property (nonatomic, assign) BOOL active;
 
 @end

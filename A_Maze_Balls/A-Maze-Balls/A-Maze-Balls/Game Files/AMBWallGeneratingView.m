@@ -14,7 +14,8 @@
 
 @property (nonatomic, strong) AMBSineGenerator *sineGenerator;
 @property (nonatomic, strong) NSMutableArray *wallSegments;
-@property (nonatomic, strong) AMBWallSegment *wallSegment;
+
+@property (nonatomic, assign) BOOL hasPassedIntro;
 
 @end
 
@@ -23,6 +24,9 @@
 - (void)setup
 {
   [super setup];
+  
+  [self setHasPassedIntro:false];
+  
   [self setupWallSegments];
   [self setupSineGenerator];
 }
@@ -58,12 +62,16 @@
         
         [weakSelf.wallSegments removeObject:wallSegment];
         [weakSelf.wallSegments insertObject:wallSegment atIndex:0];
+        if(weakSelf.hasPassedIntro)
+        {
+          [wallSegment setOffset:(sineValue * weakSelf.frame.size.width/10)];
+        }
+        
+        [weakSelf setHasPassedIntro:true];
       }
       
       [wallSegment setFrame:newWallSegmentFrame];
     }];
-    
-    [weakSelf.wallSegments[0] setOffset:(sineValue * weakSelf.frame.size.width/10)];
   }];
 }
 

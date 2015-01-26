@@ -33,6 +33,7 @@
   [super setup];
   [self setupLeftWall];
   [self setupRightWall];
+  [self updateWalls];
 }
 
 - (void)setupLeftWall

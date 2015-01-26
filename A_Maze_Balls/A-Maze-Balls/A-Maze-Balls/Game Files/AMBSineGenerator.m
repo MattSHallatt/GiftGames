@@ -21,8 +21,22 @@
 
 @implementation AMBSineGenerator
 
+- (instancetype)init
+{
+  //TODO: Find a way to calculate this initial offset
+  _index = UPPER_LIMIT*0.43;
+  return [super init];
+}
+
 - (void)setActive:(BOOL)active
 {
+  if(self.active == active)
+  {
+    return;
+  }
+  
+  _active = active;
+  
   if(active)
   {
     self.updateTimer = [NSTimer scheduledTimerWithTimeInterval:0.01f target:self selector:@selector(updateSine) userInfo:nil repeats:true];
