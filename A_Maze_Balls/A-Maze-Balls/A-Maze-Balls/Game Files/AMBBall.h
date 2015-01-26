@@ -10,4 +10,6 @@
 
 @interface AMBBall : AMBView
 
+- (id)initWithCentrePoint:(CGPoint)centrePoint radius:(float)radius;
+
 @end

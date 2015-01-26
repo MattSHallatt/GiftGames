@@ -31,6 +31,9 @@
 - (void)setup
 {
   [super setup];
+  
+  [self setUserInteractionEnabled:false];
+  
   [self setupLeftWall];
   [self setupRightWall];
   [self updateWalls];

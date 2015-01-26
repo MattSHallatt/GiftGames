@@ -25,6 +25,8 @@
 {
   [super setup];
   
+  [self setUserInteractionEnabled:false];
+  
   [self setHasPassedIntro:false];
   
   [self setupWallSegments];
