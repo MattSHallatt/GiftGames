@@ -82,7 +82,7 @@
 {
   __block BOOL isColliding = false;
   [self.wallSegments enumerateObjectsUsingBlock:^(AMBWallSegment *segment, NSUInteger idx, BOOL *stop) {
-    isColliding = isColliding? : [segment isCollidingWithFrame:self.ball.frame];
+    isColliding = isColliding? : [segment isCollidingWithBall:self.ball];
     *stop = isColliding;
   }];
   [self.ball setBackgroundColor:isColliding? [UIColor magentaColor] : [UIColor blackColor]];

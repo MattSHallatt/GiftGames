@@ -107,4 +107,15 @@
                                                          self.rightWall.frame.size.height)));
 }
 
+- (BOOL)isCollidingWithBall:(AMBBall *)ball
+{
+  if([self isCollidingWithFrame:ball.frame])
+  {
+    //TODO: Implement more detailed collision detection here
+    return true;
+  }
+  
+  return false;
+}
+
 @end

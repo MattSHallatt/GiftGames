@@ -41,4 +41,14 @@
   return distance <= self.radius;
 }
 
+- (UIBezierPath *)boundaryPath
+{
+  return [UIBezierPath bezierPathWithRoundedRect:self.frame cornerRadius:self.radius];
+}
+
+- (id)debugQuickLookObject
+{
+  return [self boundaryPath];
+}
+
 @end

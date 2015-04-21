@@ -12,4 +12,6 @@
 
 - (id)initWithCentrePoint:(CGPoint)centrePoint radius:(float)radius;
 
+- (UIBezierPath *)boundaryPath;
+
 @end

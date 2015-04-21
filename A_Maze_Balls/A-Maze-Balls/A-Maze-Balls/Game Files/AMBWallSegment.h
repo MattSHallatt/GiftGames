@@ -7,6 +7,7 @@
 //
 
 #import "AMBView.h"
+#import "AMBBall.h"
 
 @interface AMBWallSegment : AMBView
 
@@ -16,5 +17,6 @@
 - (id)initWithFrame:(CGRect)frame gap:(float)gap offset:(float)offset;
 
 - (BOOL)isCollidingWithFrame:(CGRect)incomingFrame;
+- (BOOL)isCollidingWithBall:(AMBBall *)ball;
 
 @end
